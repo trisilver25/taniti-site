@@ -21,7 +21,7 @@ function cancelSearch() {
     var links = document.getElementById("links");
     var icon = document.getElementsByClassName("icon")[0];
 
-    links.innerHTML = "<li><a class='hover active' href='index.html'>Home</a></li><li><a class='hover' href='logding.html'>Lodging</a></li><li><a class='hover' href='enter.html'>Entertainment</a></li><li><a class='hover' href='food.html'>Food</a></li><li><a class='hover' href='transportation.html'>Transportation</a></li>"
+    links.innerHTML = "<li><a class='hover active' href='index.html'>Home</a></li><li><a class='hover' href='lodging.html'>Lodging</a></li><li><a class='hover' href='enter.html'>Entertainment</a></li><li><a class='hover' href='food.html'>Food</a></li><li><a class='hover' href='transportation.html'>Transportation</a></li>"
 
     var iconDisplay = icon ? window.getComputedStyle(icon).display : 'none';
     if (iconDisplay === 'block') {
