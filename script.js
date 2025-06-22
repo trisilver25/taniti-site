@@ -14,14 +14,14 @@ function displayNav() {
 function displaySearch() {
     var links = document.getElementById("links");
 
-    links.innerHTML = "<div class='searchbar'><label for='search'>Search</label><input type='text' id='search'> <button type='button'>Search</button>  <button type='button' onclick='cancelSearch()'>Cancel</button><div>"
+    links.innerHTML = "<div class='searchbar'><label for='search'>Search</label><input type='text' id='search'> <button type='submit'>Submit</button>  <button type='button' onclick='cancelSearch()'>Cancel</button><div>"
 }
 
 function cancelSearch() {
     var links = document.getElementById("links");
     var icon = document.getElementsByClassName("icon")[0];
 
-    links.innerHTML = "<li><a class='hover active' href='index.html'>Home</a></li><li><a class='hover' href='lodging.html'>Lodging</a></li><li><a class='hover' href='enter.html'>Entertainment</a></li><li><a class='hover' href='food.html'>Food</a></li><li><a class='hover' href='transportation.html'>Transportation</a></li>"
+    links.innerHTML = "<li><a class='hover active' href='index.html'>Home</a></li><li><a class='hover' href='lodging.html'>Lodging</a></li><li><a class='hover' href='enter.html'>Entertainment</a></li><li><a class='hover' href='food.html'>Food</a></li><li><a class='hover' href='trans.html'>Transportation</a></li>"
 
     var iconDisplay = icon ? window.getComputedStyle(icon).display : 'none';
     if (iconDisplay === 'block') {
