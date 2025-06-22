@@ -23,6 +23,7 @@
     border-bottom: 2px solid black;
 }
 
+
 .navbar>ul {
     display: flex;
     list-style: none;
@@ -40,7 +41,9 @@ a:hover {
     color: black;
 }
 
-
+.active {
+    text-decoration: underline;
+}
 
 .image-head {
     grid-area: image-head;
@@ -52,6 +55,7 @@ a:hover {
 .image-head>img {
     width: 90vw;
     height: 80vh;
+    border-radius: 20px;
 }
 
 .centered {
@@ -64,16 +68,42 @@ a:hover {
 .main {
     grid-area: main;
     text-align: center;
+
 }
 
+.container {
+    background-color: rgb(191, 191, 191);
+    margin-top: 2%;
+    margin-left: 4.4%;
+    margin-right: 4.4%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
 .footer {
+    border-top: 2px solid black;
     grid-area: footer;
     display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+.social {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+
+}
+
+.miniNav {
+    margin-top: 10px;
 }
 
 .social>img {
-    width: 1em;
-    height: 1em;
+    width: 2em;
+    height: 2em;
 }
 
 .miniNav>ul {
@@ -82,9 +112,81 @@ a:hover {
 
 .row {
     display: flex;
-    gap: 5px;
+    gap: 8px;
 }
 
-.last {
-    margin-left: 5px;
+
+.miniNav>h4 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.footer>h4 {
+    margin-top: 10px;
+}
+
+.icon {
+    display: none;
+}
+
+.searchbar {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar>.shown {
+        display: none;
+        margin-bottom: 10px;
+    }
+
+    .icon {
+        display: block;
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .row {
+        display: block;
+        text-align: center;
+        padding-right: 9%;
+    }
+
+    .last {
+        display: block;
+        text-align: center;
+        padding-right: 9%;
+    }
+
+    .social {
+        margin-top: 4%;
+        margin-left: 37%;
+    }
+
+    .miniNav>h4 {
+        display: block;
+        padding-right: 1%;
+    }
+
+    .shown {
+        margin-top: 5%;
+        margin-right: 28%;
+    }
+
+}
+
+@media only screen and (min-width: 601px) {
+    .icon {
+        display: none;
+    }
+
+    .navbar>.shown {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 10px;
+    }
 }

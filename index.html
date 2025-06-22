@@ -4,21 +4,26 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="grid-container">
         <div class="navbar">
             <h3>Discover Taniti Island</h3>
-
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Lodging</a></li>
-                <li><a href="#">Entertainment</a></li>
-                <li><a href="#">Food</a></li>
-                <li><a href="#">Transportation</a></li>
-                <li><a href="#"><img src="assets/searchIcon.svg"></a></li>
+            <ul class="shown" id="links">
+                <li><a class="hover active" href="index.html">Home</a></li>
+                <li><a class="hover" href="logding.html">Lodging</a></li>
+                <li><a class="hover" href="enter.html">Entertainment</a></li>
+                <li><a class="hover" href="food.html">Food</a></li>
+                <li><a class="hover" href="transportation.html">Transportation</a></li>
+                <li><a class="hover" id="search-link" href="#" onclick="displaySearch()"><img
+                            src="assets/searchIcon.svg"></a></li>
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="displayNav()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
 
 
@@ -58,14 +63,10 @@
         </div>
 
         <div class="footer">
-            <h5>Discover Taniti Island</h5>
-            <div class="social">
-                <img src="assets/facebook_logo.png" alt="Facebook Logo">
-                <img src="assets/insta_gradientLogo.png" alt="Instagram Logo">
-                <img src="assets/pin_logo.jpg" alt="Pinterest Logo">
-            </div>
+            <h4>Discover Taniti Island</h4>
 
             <div class="miniNav">
+                <h4>Pages</h4>
                 <ul>
                     <div class="row">
                         <li><a href="#">Home</a></li>
@@ -78,6 +79,13 @@
                     <li class="last"><a href="#">Transportation</a></li>
                 </ul>
             </div>
+
+            <div class="social">
+                <img src="assets/facebook_logo.png" alt="Facebook Logo">
+                <img src="assets/insta_gradientLogo.png" alt="Instagram Logo">
+                <img src="assets/pin_logo.jpg" alt="Pinterest Logo">
+            </div>
+
         </div>
     </div>
 </body>
