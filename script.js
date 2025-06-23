@@ -30,3 +30,20 @@ function cancelSearch() {
         links.innerHTML += "<li><a class='hover' id='search-link' href='#' onclick='displaySearch()'><img src='assets/searchIcon.svg'></a></li>";
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const myDiv = document.getElementById('title');
+    const checkScreenSize = () => {
+        if (!myDiv) return;
+        if (window.innerWidth < 601) {
+            myDiv.classList.add('centered');
+            myDiv.classList.remove('top-left');
+        } else {
+            myDiv.classList.add('top-left');
+            myDiv.classList.remove('centered');
+        }
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+});
